@@ -1,0 +1,41 @@
+:root{
+    --black: #000;
+    --white: #FAFAFA;
+    --blue: #63FFFF;
+    --purple: #BCBAFD;
+    --purple-pink: #DEB3FF;
+    --pink: #FFB0DD;
+    --orange: #FFA0A0;
+    --yellow: #FFFCA8;
+    --yellow-green: #CCFFA5;
+    --green: #A5FFC9;
+}
+
+html{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+body{
+    margin: 0 auto;
+    width: 80%;
+}
+
+a{
+    color: var(--white);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: 500;
+}
+
+p{
+    line-height: 1.5rem;
+}
+
+
