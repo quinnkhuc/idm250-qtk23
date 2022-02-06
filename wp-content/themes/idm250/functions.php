@@ -63,7 +63,12 @@
 
         wp_enqueue_style(
             'search-template-css',
-            get_template_directory_uri() . '/styles/search-template  .css'
+            get_template_directory_uri() . '/styles/search-template.css'
+        );
+
+        wp_enqueue_style(
+            'single-css',
+            get_template_directory_uri() . '/styles/single.css'
         );
     }
     add_action('wp_enqueue_scripts', 'include_styles');

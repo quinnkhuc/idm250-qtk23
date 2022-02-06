@@ -1,0 +1,80 @@
+.single .page-title{
+    background-color: var(--blue);
+}
+
+.single a:hover{
+    text-decoration: underline;
+}
+
+.single figure{
+    margin: 1rem auto 0;
+    width: fit-content;
+}
+
+.single figcaption{
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.single h2{
+    color: var(--black);
+    background-color: var(--pink);
+    margin-top: 1.5rem;
+    padding: 0 0.5rem;
+    width: fit-content;
+}
+
+.single h3{
+    color: var(--black);
+    background-color: var(--purple);
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.single h4{
+    color: var(--black);
+    background-color: var(--orange);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.single h5{
+    color: var(--black);
+    background-color: var(--yellow-green);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.single h6{
+    color: var(--black);
+    background-color: var(--green);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.single ol li{
+    list-style-type: decimal;
+}
+
+.single table{
+    margin-top: 0.5rem;
+}
+
+.single table .title-row{
+    font-weight: 600;
+}
+
+.single th{
+    border: 1px solid var(--white);
+    padding: 1rem;
+}
