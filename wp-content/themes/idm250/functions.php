@@ -55,6 +55,16 @@
             'project-listing-template-css',
             get_template_directory_uri() . '/styles/project-listing-template.css'
         );
+
+        wp_enqueue_style(
+            'search-result-component-css',
+            get_template_directory_uri() . '/styles/search-result-component.css'
+        );
+
+        wp_enqueue_style(
+            'search-template-css',
+            get_template_directory_uri() . '/styles/search-template  .css'
+        );
     }
     add_action('wp_enqueue_scripts', 'include_styles');
 
