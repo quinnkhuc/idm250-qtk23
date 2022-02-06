@@ -45,6 +45,16 @@
             '404-css',
             get_template_directory_uri() . '/styles/404.css'
         );
+
+        wp_enqueue_style(
+            'project-listing-component-css',
+            get_template_directory_uri() . '/styles/project-listing-component.css'
+        );
+
+        wp_enqueue_style(
+            'project-listing-template-css',
+            get_template_directory_uri() . '/styles/project-listing-template.css'
+        );
     }
     add_action('wp_enqueue_scripts', 'include_styles');
 

@@ -1,0 +1,7 @@
+#portfolio-main h1{
+    background-color: var(--blue);
+    color: var(--black);
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+    width: fit-content;
+}
