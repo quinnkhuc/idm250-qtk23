@@ -35,6 +35,16 @@
             'footer-css',
             get_template_directory_uri() . '/styles/footer.css'
         );
+
+        wp_enqueue_style(
+            'home-css',
+            get_template_directory_uri() . '/styles/home.css'
+        );
+
+        wp_enqueue_style(
+            '404-css',
+            get_template_directory_uri() . '/styles/404.css'
+        );
     }
     add_action('wp_enqueue_scripts', 'include_styles');
 

@@ -1,0 +1,28 @@
+#not-found-main{
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+#not-found-main a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#not-found-main h1{
+    background-color: var(--blue);
+    color: var(--black);
+    font-size: 8rem;
+    margin: 0 auto;
+    padding: 2rem;
+    width: fit-content;
+}
+
+#not-found-main h2{
+    margin-bottom: 0;
+    margin-top: 2.5rem;
+}
+
+#not-found-main p{
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+}
