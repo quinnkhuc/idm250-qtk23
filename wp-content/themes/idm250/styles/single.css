@@ -6,6 +6,11 @@
     opacity: 80%;
 }
 
+.single cite{
+    display: block;
+    text-align: end;
+}
+
 .single figure{
     margin: 1rem auto 0;
     width: 100%;
