@@ -7,7 +7,7 @@
     <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class()?>>
     <header>
         <h1 id="logo"> <?php echo get_bloginfo( 'name' ); ?> </h1>
         <?php

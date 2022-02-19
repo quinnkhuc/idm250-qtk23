@@ -3,12 +3,22 @@
 }
 
 .single a:hover{
-    text-decoration: underline;
+    opacity: 80%;
 }
 
 .single figure{
     margin: 1rem auto 0;
-    width: fit-content;
+    width: 100%;
+}
+
+.single iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+.single img{
+    display: block;
+    margin: 0 auto;
 }
 
 .single figcaption{
@@ -70,11 +80,27 @@
     margin-top: 0.5rem;
 }
 
-.single table .title-row{
+.single table td{
+    border: 1px solid var(--white);
+    padding: 1rem;
+}
+
+.single blockquote{
+    font-style: italic;
+}
+
+.wp-block-button a{
+    background-color: var(--yellow);
+    color: var(--black);
     font-weight: 600;
 }
 
-.single th{
-    border: 1px solid var(--white);
-    padding: 1rem;
+.wp-block-button a:hover{
+    color: var(--black);
+    opacity: 80%;
+    text-decoration: none;
+}
+
+.wp-block-table{
+    overflow-x: auto;
 }
