@@ -1,5 +1,5 @@
     <footer>
-        <p>This website was coded in PHP, check out the code on <a href="https://github.com/quinnkhuc/idm250-qtk23" target="_blank">Github</a></p>
+        <?php get_template_part('components/search-form');  ?>
     </footer>
     <?php
         wp_footer();

@@ -1,17 +1,30 @@
-<?php /* Template Name: Search */ ?>
+<?php /* Template Name: Search Results */ ?>
 
 <?php get_header(); ?>
 
+<?php
+ $args = [
+     's' => $_GET['s'],
+     'post_type' => $_GET['post_type'],
+ ];
+ $search_query = new WP_Query($args)
+?>
+
 <main id="search-main">
-   <h1>Search result for 'project'</h1>
-   <div id="search-results-wrapper">
+    <div class="container search-results">
         <?php
-            include __DIR__ .'/components/search-result.php';
+        if ($search_query->have_posts()) {
+            while ($search_query->have_posts()) : $search_query->the_post();
+                get_template_part('components/project-teaser');
+            endwhile;
+
+            wp_reset_postdata();
+        } else {
+            echo '<p>Sorry, there are no results</p>';
+        }
+
         ?>
-        <?php
-            include __DIR__ .'/components/search-result.php';
-        ?>
-   </div>
+    </div>
 </main>
 
 <?php get_footer(); ?>

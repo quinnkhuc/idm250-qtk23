@@ -1,8 +1,6 @@
 header{
-    margin-bottom: 2rem;
     margin-top: 1rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 header a{
@@ -23,6 +21,7 @@ header ul{
 header li{
     list-style-type: none;
     margin-left: 0;
+    margin-top: 0.5rem;
 }
 
 
@@ -35,13 +34,14 @@ header li:hover{
 }
 
 #logo{
+    display: block;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1rem;
     text-align: center;
 }
 
-@media (min-width: 800px){
+@media (min-width: 768px){
     header{
         display: grid;
         grid-template-columns: 50% 50%;

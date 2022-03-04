@@ -1,51 +1,51 @@
-#single h1{
+#page h1{
     font-size: 2.5rem;
 }
 
-#single #page-title{
+#page #page-title{
     background-color: var(--blue);
     padding: 0 0.5rem;
 }
 
-#single a:hover{
+#page a:hover{
     opacity: 80%;
 }
 
-#single cite{
+#page cite{
     display: block;
 }
 
-#single cite::before{
+#page cite::before{
     content: "- ";
 }
 
-#single figure{
+#page figure{
     margin: 1rem auto 0;
     width: 100%;
 }
 
-#single iframe{
+#page iframe{
     display: block;
     margin: 1rem auto 0;
 }
 
-#single img{
+#page img{
     display: block;
     margin: 0 auto;
     max-width: 100%;
     width: 100%;
 }
 
-#single figcaption{
+#page figcaption{
     margin-top: 0.5rem;
     text-align: center;
 }
 
-#single h1{
+#page h1{
     margin-top: 1rem;
 }
 
-#single h2{
+#page h2{
     color: var(--black);
     background-color: var(--pink);
     margin-top: 1.5rem;
@@ -53,7 +53,7 @@
     width: fit-content;
 }
 
-#single h3{
+#page h3{
     color: var(--black);
     background-color: var(--purple);
     font-size: 1.75rem;
@@ -62,7 +62,7 @@
     width: fit-content;
 }
 
-#single h4{
+#page h4{
     color: var(--black);
     background-color: var(--orange);
     font-size: 1.5rem;
@@ -72,7 +72,7 @@
     width: fit-content;
 }
 
-#single h5{
+#page h5{
     color: var(--black);
     background-color: var(--yellow-green);
     font-size: 1.25rem;
@@ -82,7 +82,7 @@
     width: fit-content;
 }
 
-#single h6{
+#page h6{
     color: var(--black);
     background-color: var(--green);
     font-weight: 600;
@@ -91,59 +91,59 @@
     width: fit-content;
 }
 
-#single ol li{
+#page ol li{
     list-style-type: decimal;
 }
 
-#single table{
+#page table{
     margin-top: 0.5rem;
 }
 
-#single table td{
+#page table td{
     border: 1px solid var(--white);
     padding: 1rem;
 }
 
-#single blockquote{
+#page blockquote{
     font-style: italic;
 }
 
-#single .wp-block-button{
+#page .wp-block-button{
     margin-top: 1rem;
 }
 
-#single .wp-block-button a{
+#page .wp-block-button a{
     background-color: var(--yellow);
     color: var(--black);
     font-weight: 600;
 }
 
-#single .wp-block-button a:hover{
+#page .wp-block-button a:hover{
     color: var(--black);
     opacity: 80%;
     text-decoration: none;
 }
 
-#single .wp-block-table{
+#page .wp-block-table{
     overflow-x: auto;
 }
 
 @media (min-width: 768px){
-    #single h1{
+    #page h1{
         margin-top: 0;
     }
 
-    #single figure{
+    #page figure{
         margin-top: 1.5rem;
     }
 
-    #single img{
+    #page img{
         width: 80%;
     }
 }
 
 @media (min-width: 1024px){
-    #single img{
+    #page img{
         width: 60%;
     }
 }

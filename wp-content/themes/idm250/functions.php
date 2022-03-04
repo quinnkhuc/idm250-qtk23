@@ -37,8 +37,8 @@
         );
 
         wp_enqueue_style(
-            'home-css',
-            get_template_directory_uri() . '/styles/home.css'
+            'front-page-css',
+            get_template_directory_uri() . '/styles/front-page.css'
         );
 
         wp_enqueue_style(
@@ -47,13 +47,8 @@
         );
 
         wp_enqueue_style(
-            'project-listing-component-css',
-            get_template_directory_uri() . '/styles/project-listing-component.css'
-        );
-
-        wp_enqueue_style(
-            'project-listing-template-css',
-            get_template_directory_uri() . '/styles/project-listing-template.css'
+            'listing-template-css',
+            get_template_directory_uri() . '/styles/listing-template.css'
         );
 
         wp_enqueue_style(
@@ -69,6 +64,16 @@
         wp_enqueue_style(
             'single-css',
             get_template_directory_uri() . '/styles/single.css'
+        );
+
+        wp_enqueue_style(
+            'page-css',
+            get_template_directory_uri() . '/styles/page.css'
+        );
+
+        wp_enqueue_style(
+            'recent-work-css',
+            get_template_directory_uri() . '/styles/recent-work.css'
         );
     }
     add_action('wp_enqueue_scripts', 'include_styles');
@@ -173,5 +178,24 @@
     }
 
     add_action('init', 'idm_register_taxonomies', 0);
+
+    //Helpers
+    function idm_get_asset_by_id($attachment_id)
+    {
+        // If no image, return false
+        if (!wp_get_attachment_image_url($attachment_id, '')) {
+            return false;
+        }
+        $attachment = get_post($attachment_id);
+
+        return [
+            'alt' => get_post_meta($attachment->ID, '_wp_attachment_image_alt', true),
+            'caption' => $attachment->post_excerpt,
+            'description' => $attachment->post_content,
+            'href' => get_permalink($attachment->ID),
+            'src' => wp_get_attachment_image_url($attachment_id, ''),
+            'title' => $attachment->post_title
+        ];
+    }
 
 ?>

@@ -2,16 +2,9 @@
 
 <?php get_header(); ?>
 
-<main id="portfolio-main">
-    <h1>PORTFOLIO</h1>
-    <div class='portfolio-projects-wrapper'>
-        <?php
-            include __DIR__ .'/components/project-listing.php';
-        ?>
-        <?php
-            include __DIR__ .'/components/project-listing.php';
-        ?>
-    </div>  
+<main id="listing-main">
+    <h1><b class='page-title'><?php the_title(); ?></b></h1>
+    <?php get_template_part('components/recent-works');  ?>
 </main>
 
 <?php get_footer(); ?>

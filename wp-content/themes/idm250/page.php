@@ -1,11 +1,9 @@
 <?php get_header(); ?>
 
 <?php while (have_posts()) : the_post(); ?>
-    <main id='single'>
+    <main id="page">
         <h1><b id='page-title'><?php the_title(); ?></b></h1>
-        <div class='content'>
-            <?php the_content(); ?>
-        </div>
+        <?php the_content(); ?>
     </main>
 <?php endwhile; ?>
 

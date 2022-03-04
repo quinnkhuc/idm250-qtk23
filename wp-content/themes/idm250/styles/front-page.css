@@ -1,0 +1,27 @@
+#home-main{
+    margin-top: 1rem;
+}
+
+#home-main h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#home-main strong{
+    background-color: var(--blue);
+    color: var(--black);
+    line-height: 5.5rem;
+    padding: 0 0.5rem;
+}
+
+#home-main p{
+    line-height: 1.5rem;
+    margin-top: 0rem;
+}
+
+@media(min-width: 768px){
+    #home-main h1,#home-main p{
+        text-align: center;
+    }
+}

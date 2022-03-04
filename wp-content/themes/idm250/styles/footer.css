@@ -1,5 +1,28 @@
-footer p{
+footer{
     border-top: 1px solid var(--white);
     margin-top: 3rem;
     padding-top: 1rem;
+}
+
+footer form{
+    margin: 0 auto;
+    text-align: end;
+}
+
+footer input[type=text]{
+    border: none;
+    padding: 0.5rem;
+}
+
+footer .btn{
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+footer .btn:hover{
+    text-decoration: none;
 }
