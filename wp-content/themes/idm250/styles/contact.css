@@ -1,0 +1,43 @@
+#contact-main h1{
+    font-size: 2.5rem;
+}
+
+#contact-main #page-title{
+    background-color: var(--blue);
+    padding: 0 0.5rem;
+}
+
+#contact-main li{
+    list-style-type: none;
+}
+
+#contact-main input, #contact-main textarea{
+    background-color: var(--white) !important;
+    color: var(--black);
+    font-family: "Poppins";
+    font-size: 1.2rem;
+}
+
+#contact-main button{
+    background-color: var(--yellow) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: var(--black) !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    display: block !important;
+    margin: 1rem auto !important;
+    padding: 0.5rem 1rem  !important;
+    width: fit-content !important;
+}
+
+@media(min-width: 1024px){
+    #contact-main h1{
+        text-align: center;
+    }
+
+    #contact-main form{
+        margin: 0 auto;
+        width: 80%;
+    }
+}

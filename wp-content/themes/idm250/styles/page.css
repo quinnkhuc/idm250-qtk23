@@ -46,9 +46,10 @@
 }
 
 #page h2{
-    color: var(--black);
     background-color: var(--pink);
-    margin-top: 1.5rem;
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-top: 1rem;
     padding: 0 0.5rem;
     width: fit-content;
 }
@@ -56,28 +57,28 @@
 #page h3{
     color: var(--black);
     background-color: var(--purple);
-    font-size: 1.75rem;
-    margin-top: 1.5rem;
-    padding: 0.5rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    padding: 0.25rem;
     width: fit-content;
 }
 
 #page h4{
     color: var(--black);
     background-color: var(--orange);
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     font-weight: 600;
-    margin-top: 1.5rem;
-    padding: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.15rem;
     width: fit-content;
 }
 
 #page h5{
     color: var(--black);
     background-color: var(--yellow-green);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding: 0.5rem;
     width: fit-content;
 }
@@ -86,7 +87,7 @@
     color: var(--black);
     background-color: var(--green);
     font-weight: 600;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding: 0.5rem;
     width: fit-content;
 }

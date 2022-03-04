@@ -14,6 +14,4 @@
     src="<?php echo $featured_image['src']; ?>"
     alt="<?php echo $featured_image['alt']; ?>">
   <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-  <p><?php the_excerpt(); ?>
-  </p>
 </div>

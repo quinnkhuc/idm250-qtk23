@@ -75,6 +75,16 @@
             'recent-work-css',
             get_template_directory_uri() . '/styles/recent-work.css'
         );
+
+        wp_enqueue_style(
+            'archive-css',
+            get_template_directory_uri() . '/styles/archive.css'
+        );
+
+        wp_enqueue_style(
+            'contact-css',
+            get_template_directory_uri() . '/styles/contact.css'
+        );
     }
     add_action('wp_enqueue_scripts', 'include_styles');
 
@@ -178,6 +188,18 @@
     }
 
     add_action('init', 'idm_register_taxonomies', 0);
+
+    //Register sidebars
+    function idm_register_sidebars()
+    {
+        register_sidebar(
+            [
+                'name' => 'Contact Sidebar',
+                'id' => 'contact-sidebar',
+            ]
+        );
+    }
+    add_action('widgets_init', 'idm_register_sidebars');
 
     //Helpers
     function idm_get_asset_by_id($attachment_id)

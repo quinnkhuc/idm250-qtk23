@@ -1,0 +1,34 @@
+#category-title{
+    font-size: 2rem;
+}
+
+#category-container{
+    margin-top: 1rem;
+}
+
+#category-container h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+#category-container img{
+    max-width: 100vw;
+    width: 100%;
+}
+
+
+@media(min-width: 768px){
+    #category-container{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 1024px){
+    #category-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

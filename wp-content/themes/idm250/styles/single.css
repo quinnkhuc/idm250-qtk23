@@ -47,7 +47,7 @@
 
 #single h2{
     color: var(--black);
-    background-color: var(--pink);
+    background-color: var(--yellow-green);
     margin-top: 1.5rem;
     padding: 0 0.5rem;
     width: fit-content;
@@ -64,7 +64,7 @@
 
 #single h4{
     color: var(--black);
-    background-color: var(--orange);
+    background-color: var(--pink);
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 1.5rem;
@@ -74,7 +74,7 @@
 
 #single h5{
     color: var(--black);
-    background-color: var(--yellow-green);
+    background-color: var(--green);
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 1.5rem;
@@ -84,7 +84,7 @@
 
 #single h6{
     color: var(--black);
-    background-color: var(--green);
+    background-color: var(--orange);
     font-weight: 600;
     margin-top: 1.5rem;
     padding: 0.5rem;
