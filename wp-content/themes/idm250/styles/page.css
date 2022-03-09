@@ -27,6 +27,8 @@
 #page iframe{
     display: block;
     margin: 1rem auto 0;
+    height: 200px;
+    width: 300px;
 }
 
 #page img{
@@ -134,6 +136,14 @@
     margin-top: 1rem;
 }
 
+.wp-block-pullquote{
+    margin: 0;
+}
+
+.wp-block-pullquote cite{
+    text-transform: capitalize;
+}
+
 @media (min-width: 768px){
     #page h1{
         margin-top: 0;
@@ -145,6 +155,11 @@
 
     #page img{
         width: 80%;
+    }
+
+    #page iframe{
+        height: 400px;
+        width: 700px;
     }
 
     #post-header{
