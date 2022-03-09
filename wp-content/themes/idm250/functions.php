@@ -189,6 +189,9 @@
 
     add_action('init', 'idm_register_taxonomies', 0);
 
+    //Featured image
+    add_theme_support( 'post-thumbnails' );
+
     //Register sidebars
     function idm_register_sidebars()
     {

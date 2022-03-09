@@ -107,6 +107,7 @@
 
 #page blockquote{
     font-style: italic;
+    margin-top: 1rem;
 }
 
 #page .wp-block-button{
@@ -129,6 +130,10 @@
     overflow-x: auto;
 }
 
+#post-header{
+    margin-top: 1rem;
+}
+
 @media (min-width: 768px){
     #page h1{
         margin-top: 0;
@@ -141,10 +146,39 @@
     #page img{
         width: 80%;
     }
+
+    #post-header{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "meta img";
+    }
+
+    #post-header img{
+        grid-area: img;
+        align-self: stretch;
+        justify-self: stretch;
+        width: 100%;
+    }
+
+    #post-header div{
+        grid-area: meta;
+        align-self: center;
+    }
+
 }
 
 @media (min-width: 1024px){
     #page img{
         width: 60%;
     }
+
+    #post-header{
+        grid-template-columns: 1.5fr 2fr;
+    }
+
+    #post-header img{
+        width: 100%;
+    }
+
 }
