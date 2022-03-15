@@ -1,13 +1,13 @@
-#category-title{
+#search-title{
     font-size: 2rem;
 }
 
-#category-container{
+#search-results-container{
     margin-top: 1rem;
 }
 
 @media(min-width: 768px){
-    #category-container{
+    #search-results-container{
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr 1fr;
@@ -15,7 +15,7 @@
 }
 
 @media(min-width: 1024px){
-    #category-container{
+    #search-results-container{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }

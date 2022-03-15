@@ -21,20 +21,23 @@ get_template_part(
 );
 ?>
 
-<div class="container search-results">
-    <?php
-  if ($search_query->have_posts()) {
-      while ($search_query->have_posts()) : $search_query->the_post();
-      get_template_part('components/project-teaser');
-      endwhile;
-      // After looping through a separate query, this function restores the $post global to the current post in the main query.
-      wp_reset_postdata();
-  } else {
-      // no results
-      echo '<p>Sorry, there are no results</p>';
-  }
+<h1 id="search-title">Search result for <?php echo $search_query ?></h1>
 
-?>
+<div id="search-results-container">
+    <?php
+    if ($search_query->have_posts()) {
+        while ($search_query->have_posts()) : $search_query->the_post();
+        get_template_part('components/project-teaser');
+        endwhile;
+        // After looping through a separate query, this function restores the $post global to the current post in the main query.
+        wp_reset_postdata();
+    } else {
+        // no results
+        echo '<p>Sorry, there are no results</p>';
+    }
+
+    ?>
 
 </div>
-<?php get_footer();
+
+<?php get_footer(); ?>

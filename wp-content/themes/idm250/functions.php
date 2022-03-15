@@ -51,14 +51,10 @@
             get_template_directory_uri() . '/styles/listing-template.css'
         );
 
-        wp_enqueue_style(
-            'search-result-component-css',
-            get_template_directory_uri() . '/styles/search-result-component.css'
-        );
 
         wp_enqueue_style(
-            'search-template-css',
-            get_template_directory_uri() . '/styles/search-template.css'
+            'search-css',
+            get_template_directory_uri() . '/styles/search.css'
         );
 
         wp_enqueue_style(
